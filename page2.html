@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Wheel - Win a Car!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="wheel.css">
+</head>
+<body>
+    <header>
+        <h1>Lucky Wheel Game</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#game">Play</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="game-container">
+            <h2>Spin to Win!</h2>
+            <p class="game-description">Test your luck! Spin the wheel and land on 10 to WIN A CAR!</p>
+            
+            <div class="wheel-container">
+                <div class="pointer"></div>
+                <canvas id="wheelCanvas" width="400" height="400"></canvas>
+            </div>
+
+            <button id="spinButton" class="spin-btn">SPIN THE WHEEL</button>
+
+            <div id="resultDisplay" class="result-display">
+                <h3 id="resultTitle"></h3>
+                <p id="resultMessage"></p>
+                <button id="playAgain" class="play-again-btn" style="display: none;">Play Again</button>
+            </div>
+        </section>
+
+        <section class="prizes-info">
+            <h3>Prize List</h3>
+            <ul class="prize-list">
+                <li><span class="prize-number">10</span> - 🚗 BRAND NEW CAR!</li>
+                <li><span class="prize-number">9</span> - 💻 Laptop</li>
+                <li><span class="prize-number">8</span> - 📱 Smartphone</li>
+                <li><span class="prize-number">7</span> - 🎧 Premium Headphones</li>
+                <li><span class="prize-number">6</span> - ⌚ Smart Watch</li>
+                <li><span class="prize-number">5</span> - 🎮 Gaming Console</li>
+                <li><span class="prize-number">4</span> - 📷 Digital Camera</li>
+                <li><span class="prize-number">3</span> - 🎁 $100 Gift Card</li>
+                <li><span class="prize-number">2</span> - 🎫 $50 Voucher</li>
+                <li><span class="prize-number">1</span> - 🍀 Free Spin</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Lucky Wheel Game. All rights reserved.</p>
+    </footer>
+
+    <script src="wheel.js"></script>
+</body>
+</html>

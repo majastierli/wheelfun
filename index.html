@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Web Application</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <a href="page2.html" class="hero-link">
+                <img src="https://images.trvl-media.com/place/602987/f8049d4a-b9e5-4742-9506-d35dbeaa1043.jpg?impolicy=fcrop&w=1200&h=300&q=medium" alt="Hero Image - Click to play Lucky Wheel!" class="hero-image">
+                <div class="image-overlay">
+                    <p>Click to Play Lucky Wheel Game!</p>
+                </div>
+            </a>
+            <h2>About This Application</h2>
+            <p>This is a simple web application demonstrating basic HTML structure with a header, text content, and an interactive form. Feel free to explore and submit the form below to see it in action.</p>
+            <p>Web development involves creating engaging and functional websites that provide value to users. This app showcases fundamental web development concepts including HTML structure, CSS styling, and JavaScript interactivity.</p>
+        </section>
+
+        <section class="form-section">
+            <h2>Contact Form</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <div id="formMessage" class="message"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Web App. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
